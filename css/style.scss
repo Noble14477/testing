@@ -1,0 +1,26 @@
+.anim{
+    position: relative;
+    border: 1px solid red;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   span{
+        background: red;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        animation: juice 1s ease-in-out infinite ;
+   } 
+}
+
+@keyframes juice {
+     0%{
+          background: red;  
+     }
+     50%{
+          background: rgb(255, 0, 128); transform: translateY(-50%); box-shadow: 0 0 10px rgba(2, 20, 118, 0.818); 
+     }
+}
